@@ -1,7 +1,7 @@
-import { Home, Calendar, Settings, BarChart } from "lucide-react";
+import { Home, Calendar, Settings as SettingsIcon, BarChart } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import ShiftManagement from "./pages/ShiftManagement.jsx";
-import Settings from "./pages/Settings.jsx";
+import SettingsPage from "./pages/Settings.jsx";
 import Statistics from "./pages/Statistics.jsx";
 
 export const navItems = [
@@ -20,8 +20,8 @@ export const navItems = [
   {
     title: "設定",
     to: "/settings",
-    icon: <Settings className="h-4 w-4" />,
-    page: <Settings />,
+    icon: <SettingsIcon className="h-4 w-4" />,
+    page: <SettingsPage />,
   },
   {
     title: "統計",
